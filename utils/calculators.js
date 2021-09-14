@@ -6,7 +6,7 @@ export const subtract = (a,b) => {
     return a-b
 }
 
-export const multiply = (a,ba,b) => {
+export const multiply = (a,b) => {
     return a*b
 }
 

@@ -10,16 +10,16 @@ const Operators = (props) => {
     return (
         <View style={{ ...styles.container, ...props.style }}>
             <View style={styles.rows}>
-                <CalcButton title={'+'} style={styles.buttons} />
+                <CalcButton title={'+'} style={styles.buttons} onPress={() => props.onPressOperators('+')} />
             </View>
             <View style={styles.rows}>
-                <CalcButton title={'-'} style={styles.buttons} />
+                <CalcButton title={'-'} style={styles.buttons} onPress={() => props.onPressOperators('-')} />
             </View>
             <View style={styles.rows}>
-                <CalcButton title={'x'} style={styles.buttons} />
+                <CalcButton title={'x'} style={styles.buttons} onPress={() => props.onPressOperators('x')} />
             </View>
             <View style={styles.rows}>
-                <CalcButton title={':'} style={styles.buttons} />
+                <CalcButton title={':'} style={styles.buttons} onPress={() => props.onPressOperators(':')} />
             </View>
         </View>
     )
